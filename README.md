@@ -1,19 +1,15 @@
-# jt-dpm8600-psu-mqtt
-Use an ESP8266 to control a JT-DPM8600 power supply using MQTT.
+# dpm8600-esp32-mqtt
+Use an ESP32 to control a JT-DPM8600 DC/DC converter using MQTT.
 
-<img src="https://user-images.githubusercontent.com/1439229/210946071-9ef86473-e93a-4431-8c09-73fe14364731.png" width="200">
+Only use it if you know what you are doing!
+Consider it to be a quick and dirty hack. It might damage your DP8600.
 
-Based on [@Lotiq's](https://github.com/Lotiq) library: https://github.com/Lotiq/DPM8600
+Idea ist Based on [@Lotiq's](https://github.com/Lotiq) library: https://github.com/Lotiq/DPM8600 and
+[@d4rken's](https://github.com/d4rken) Project: https://github.com/d4rken/jt-dpm8600-psu-mqtt
 
 ## Instructions
 
 * Rename `Config.h.sample` to `Config.h`
 * Enter your WiFi credentials
 * Enter the address and data of the MQTT broker in your local WiFi
-* Open the project with VSCode+PlatformIO and flash it to your Arduino
-
-
-<img src="https://raw.githubusercontent.com/d4rken/jt-dpm8600-psu-mqtt/main/.assets/pic1.jpg" width="400">
-
-## Wiring
-<img src="https://raw.githubusercontent.com/ps915/jt-dpm8600-psu-mqtt/main/.assets/DPM8600_WEMOS_D1_MQTT_WIRING.png" width="400">
+* Open the project with VSCode+PlatformIO and flash it to your ESP32
